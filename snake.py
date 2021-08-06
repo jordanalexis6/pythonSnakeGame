@@ -17,11 +17,21 @@ head.shape("square")
 head.color("black")
 head.penup()
 head.goto(0, 0)
-head.direction = "stop"
+head.direction = "up"
+
+
+# funtions
+def move():
+    if head.direction == "up":
+        y = head.ycor()
+        head.sety(y + 20)
+
 
 # main game loop
 while True:
     wn.update()
+
+    move()
 
 
 wn.mainloop()
