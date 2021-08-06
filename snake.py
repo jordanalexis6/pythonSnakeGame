@@ -45,10 +45,17 @@ def move():
     if head.direction == "down":
         head.sety(head.ycor() - 20)
     if head.direction == "left":
-        head.setx(head.xcor() + 20)
+        head.setx(head.xcor() - 20)
     if head.direction == "right":
         head.setx(head.xcor() + 20)
 
+
+# keyboard bindings
+wn.listen()
+wn.onkeypress(go_up, "w")
+wn.onkeypress(go_down, "s")
+wn.onkeypress(go_left, "a")
+wn.onkeypress(go_right, "d")
 
 # main game loop
 while True:
