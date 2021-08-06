@@ -69,6 +69,10 @@ wn.onkeypress(go_right, "d")
 while True:
     wn.update()
 
+    if head.distance(food) < 20:
+        # move food to random spot
+        food.goto(random.randint(-290, 290), random.randint(-290, 290))
+
     move()
 
     time.sleep(delay)
