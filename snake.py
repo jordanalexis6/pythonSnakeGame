@@ -8,7 +8,7 @@ delay = 0.1
 # main screen
 wn = turtle.Screen()
 wn.title("Simple Snake Game by @jordanalexis6")
-wn.bgcolor("#28113d")
+wn.bgcolor("#81ebe7")
 wn.setup(width=600, height=600)
 wn.tracer(0)
 
@@ -29,8 +29,11 @@ food.color("red")
 food.penup()
 food.goto(0, 100)
 
+segments = []
 
 # funtions
+
+
 def go_up():
     head.direction = "up"
 
@@ -69,9 +72,20 @@ wn.onkeypress(go_right, "d")
 while True:
     wn.update()
 
+    # check for collision with food
     if head.distance(food) < 20:
         # move food to random spot
-        food.goto(random.randint(-290, 290), random.randint(-290, 290))
+        x = random.randint(-290, 290)
+        y = random.randint(-290, 290)
+        food.goto(x, y)
+
+        # add segment
+        new_segment = turtle.Turtle()
+        new_segment.speed(0)
+        new_segment.shape("circle")
+        new_segment.color("#377832")
+        new_segment.penup()
+        segments.append(new_segment)
 
     move()
 
