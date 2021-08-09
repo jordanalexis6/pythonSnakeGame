@@ -106,6 +106,8 @@ while True:
 
         # reset score
         score = 0
+
+        # update score display
         pen.clear()
         pen.write("Score: {}  High Score: {}".format(score, high_score), align="center",
                   font=("Courier", 26,  "normal"))
@@ -160,6 +162,14 @@ while True:
 
             # clear segments list
             segments.clear()
+
+            # reset score
+            score = 0
+
+            # update score display
+            pen.clear()
+            pen.write("Score: {}  High Score: {}".format(score, high_score), align="center",
+                      font=("Courier", 26,  "normal"))
 
     time.sleep(delay)
 
