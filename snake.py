@@ -119,6 +119,14 @@ while True:
         new_segment.penup()
         segments.append(new_segment)
 
+        # increase score
+        score += 10
+        if score > high_score:
+            high_score = score
+        pen.clear()
+        pen.write("Score: {}  High Score: {}".format(score, high_score), align="center",
+                  font=("Courier", 26,  "normal"))
+
     # move the end segments first in reverse order
     for index in range(len(segments)-1, 0, -1):
         x = segments[index-1].xcor()
