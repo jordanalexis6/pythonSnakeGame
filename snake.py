@@ -72,6 +72,13 @@ wn.onkeypress(go_right, "d")
 while True:
     wn.update()
 
+    # check for collision with border
+    if head.xcor() > 290 or head.xcor() < -290 or head.ycor() > 290 or head.ycor() < -290:
+        time.sleep(1)
+        head.goto(0, 0)
+        head.direction = "stop"
+
+
     # check for collision with food
     if head.distance(food) < 20:
         # move food to random spot
