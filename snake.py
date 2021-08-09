@@ -5,6 +5,10 @@ import random
 
 delay = 0.1
 
+# score
+score = 0
+high_score = 0
+
 # main screen
 wn = turtle.Screen()
 wn.title("Simple Snake Game by @jordanalexis6")
