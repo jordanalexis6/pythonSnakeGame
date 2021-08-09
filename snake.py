@@ -116,6 +116,9 @@ while True:
         for segment in segments:
             segment.goto(1000, 1000)
 
+        # clear segments list
+        segments.clear()
+
     move()
 
     # check for head collision with the body segments
