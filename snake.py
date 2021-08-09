@@ -112,6 +112,10 @@ while True:
         y = head.ycor()
         segments[0].goto(x, y)
 
+        # hide segments
+        for segment in segments:
+            segment.goto(1000, 1000)
+
     move()
 
     # check for head collision with the body segments
