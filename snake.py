@@ -104,6 +104,12 @@ while True:
         # clear segments list
         segments.clear()
 
+        # reset score
+        score = 0
+        pen.clear()
+        pen.write("Score: {}  High Score: {}".format(score, high_score), align="center",
+                  font=("Courier", 26,  "normal"))
+
     # check for collision with food
     if head.distance(food) < 20:
         # move food to random spot
