@@ -82,6 +82,9 @@ while True:
         for segment in segments:
             segment.goto(1000, 1000)
 
+        # clear segments list
+        segments.clear()
+
     # check for collision with food
     if head.distance(food) < 20:
         # move food to random spot
