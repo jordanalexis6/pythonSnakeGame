@@ -127,6 +127,9 @@ while True:
         new_segment.penup()
         segments.append(new_segment)
 
+        # shorten the delay
+        delay -= 0.001
+
         # increase score
         score += 10
         if score > high_score:
