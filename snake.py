@@ -3,6 +3,7 @@ import turtle
 import time
 import random
 
+# delay
 delay = 0.1
 
 # score
