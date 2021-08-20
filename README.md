@@ -6,6 +6,7 @@
 <h2>⚙️ List of Technology Used</h2>
 <ul> 
     <li>Python</li>
+    <li>turtle module</li>
 </ul>
 <h2>📓 Contributor(s)</h2>
 <table>
