@@ -11,7 +11,7 @@
 <h2>📓 Contributor(s)</h2>
 <table>
 <td align="center">
-  <a href=""><img src="https://avatars2.githubusercontent.com/u/60550803?s=460&u=a2f0357ccc7cb5cb28bc61350651a44bd42d54b7&v=4" width="100px;" /><br /><sub><b>Jordan Neill</b></sub></a><br />
+  <a href=""><img src="https://avatars2.githubusercontent.com/u/60550803?s=460&u=a2f0357ccc7cb5cb28bc61350651a44bd42d54b7&v=4" width="100px;" /><br /><sub><b>Jordan Peña</b></sub></a><br />
    <a href="https://github.com/jordanalexis6"><img src="./Assets/github.svg" width="20px;" alt=""></a>
    <a href="https://www.linkedin.com/in/jordan-neill-a48b681a0/"><img src="./Assets/linkedin.svg" width="20px;" alt=""></a>
     <details>
